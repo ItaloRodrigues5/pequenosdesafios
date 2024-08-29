@@ -14,4 +14,6 @@
   <li>HTML5;</li>
   <li>CSS3;</li>
   <li>JavaScript;</li>
+  <li>PHP - Revisar;</li>
+  <li>MySQL. - Revisar</li>
 </ul>
