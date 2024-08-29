@@ -1,13 +1,17 @@
-# Pequenos Desafios - Jogos Educativos Interativos
+<h1>Pequenos Desafios - Jogos Educativos Interativos</h1>
 
-Repositório do projeto WEB de jogos interativos Pequenos Desafios.
+<p>Repositório do projeto WEB de jogos interativos Pequenos Desafios.</p>
 
-- O intuito do projeto é ser para aprendizagem de criação de sites WEB;
-- O projeto visa ser educativo;
-- Possivelmente publicado;
+<ul>
+  <li>O intuito do projeto é ser para aprendizagem de criação de sites WEB;</li>
+  <li>O projeto visa ser educativo;</li>
+  <li>Possivelmente publicado;</li>
+</ul>
 
-  # Linguagens utilizadas
+<h2>Linguagens utilizadas</h2>
 
-  - HTML5;
-  - CSS3;
-  - JavaScript;
+<ul>
+  <li>HTML5;</li>
+  <li>CSS3;</li>
+  <li>JavaScript;</li>
+</ul>
