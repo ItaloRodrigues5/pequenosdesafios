@@ -1,6 +1,6 @@
 <h1>Pequenos Desafios - Jogos Educativos Interativos</h1>
 
-<p>Repositório do projeto WEB de jogos interativos Pequenos Desafios.</p><br>
+<p>Repositório do projeto WEB de jogos interativos Pequenos Desafios.</p>
 
 <p>Nome do projeto: Pequenos Desafios</p><br>
 
