@@ -2,7 +2,8 @@
 
 <p>Repositório do projeto WEB de jogos interativos Pequenos Desafios.</p>
 
-<p>Nome do projeto: Pequenos Desafios</p><br>
+<p>Nome do projeto: Pequenos Desafios</p>
+<p>Colaboradores: Carlos Eduardo, Daniel Silva, Italo Ferreira, Thiago de Lucena.</p>
 
 <ul>
   <li>O intuito do projeto é ser para aprendizagem de criação de sites WEB;</li>
