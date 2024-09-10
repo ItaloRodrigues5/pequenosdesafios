@@ -7,7 +7,7 @@
 
 <ul>
   <li>O intuito do projeto é ser para aprendizagem de criação de sites WEB;</li>
-  <li>O projeto visa ser educativo;</li>
+  <li>O projeto visa ser educativo dedicado ao público alvo estudantes do fundamental I e II;</li>
   <li>Possivelmente publicado;</li>
 </ul>
 
