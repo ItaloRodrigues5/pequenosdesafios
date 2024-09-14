@@ -21,8 +21,7 @@
   <li>MySQL. - Revisar</li>
 </ul>
 
-
-<h2>Divisão de papéis</h2> <br>
+<h2>Divisão de papéis</h2>
 
 <h3>Front-end</h3>
 
