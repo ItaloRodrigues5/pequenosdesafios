@@ -20,3 +20,22 @@
   <li>PHP - Revisar;</li>
   <li>MySQL. - Revisar</li>
 </ul>
+
+
+<h2>Divisão de papéis</h2> <br>
+
+<h3>Front-end</h3>
+
+<ul>
+  <li>Carlos Eduardo</li>
+  <li>Thiago de Lucena</li>
+</ul>
+
+<h3>Back-end</h3>
+
+<ul>
+  <li>Daniel da Silva</li>
+  <li>Italo Ferreira</li>
+</ul>
+
+<p>Deixando claro que qualquer demanda necessária, as partes da equipe podem se juntar e auxiliar uma a outra.</p>
