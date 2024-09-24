@@ -38,3 +38,8 @@
 </ul>
 
 <p>Deixando claro que qualquer demanda necessária, as partes da equipe podem se juntar e auxiliar uma a outra.</p>
+
+<h2>Links de Acesso Geral</h2>
+
+<a href="https://trello.com/b/RdlPZ8Kc">Trello<a/> <br/>
+<a href="https://www.figma.com/design/mw2bhCyUSPXXsYav85gKWw/Untitled?node-id=0-1&t=PPK2ARHNj2j7WkiM-1">Figma<a/>
