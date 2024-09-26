@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #A145C2;
+    --formborder: #FFDA46;
+    --circlesbackground: #C4527F;
+    --presstoplay: #5DC0EB;
+    --textplay: #529088;
+
+    --fontepadrao: Arial, verdana, Helvetica, sans-serif;
+    --fontecomic: "Comic Neue", cursive;
+}
+
+body{
+    background-color: var(--background);
+    height: auto;
+}
+
+header{
+    
+}
+
+header > h1{
+    
+}
+
+main{
+    height: auto;
+    margin: 0;
+}
+
+/* Daqui até o próximo comentário faz parte do index.html */
+
+.indexdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    width: auto;
+}
+
+.logoindex{
+    margin-bottom: 0;
+    margin-left: -2%;
+    width: 37%;
+}
+
+.indexdivh2{
+    background-color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30% 0 30%;
+    margin-top: -8%;
+    border-radius: 10%;
+    min-height: 30%;
+    max-height: 50%;
+}
+
+.indexh2{
+    padding-top: 5%;
+    font-size: 3em;
+    font-family: var(--fontecomic);
+}
+
+#h22{
+    margin-top: -8%;
+    padding-bottom: 5%;
+    color: var(--textplay);
+}
+
+.linkh2index{
+    text-align: center;
+}
+
+/* Aqui em baixo faz parte do login.html */
+
+.container{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+div{
+    border-radius: 10%;
+    display: flex;
+    height: auto;
+    margin-left: 5%;
+}
+
+.boximage{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 41%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.imagelogo{
+    width: 160%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+div > h2{
+    font-size: 4em;
+    padding: 0 0 0 0;
+    text-align: center;
+    margin-top: none;
+}
+
+div > form > label{
+    font-size: 2em;
+}
+
+div > form > input {
+    font-size: 1.5em;
+    width: 82%;
+}
+
+div > form > input.pass{
+    width: 83.5%
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5% 2% 0 0;
+    border-radius: 15%;
+    padding: 1%;
+    min-width: 10%;
+    max-width: 18%;
+}
+
+input[type="submit"]{
+    margin-left: 31%;
+}
+
+form > p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*
+.google-login{
+    display: flex;
+    background-image: var(--googlelogo);
+    background-repeat: no-repeat;
+    
+}*/
+
+.borderform{
+    background-color: var(--formborder);
+    height: auto;
+    flex: 1;
+}
+
+#form{
+    background-color: white;
+    padding: 5% 5% 5% 5%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    flex: 1;
+}
+
+.divbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    margin-left: 28%;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    padding: none;
+    margin: 0;
+    margin-left: -20%;
+    background: none;
+    border: none;
+    width: 30%;
+    height: auto;
+}
+
+.button-icons{
+    width: 30%;
+    height: auto;
+    margin-left: none;
+    padding: none;
+    margin: none;
+    background: none;
+    border: none;
+    display: block;
+}
+
+p#forgotpass{
+    margin-top: 0%;
+    margin-bottom: 0;
+    display: inline;
+}
+
+p#semconta{
+    display: inline;
+}
+
