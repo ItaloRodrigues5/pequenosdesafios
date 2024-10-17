@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+div{
+    border-radius: 10%;
+    display: flex;
+    height: auto;
+    margin-left: 5%;
+}
+
+.boximage{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 41%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.imagelogo{
+    width: 160%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+div > h2{
+    font-size: 4em;
+    padding: 0 0 0 0;
+    text-align: center;
+    margin-top: none;
+}
+
+div > form > label{
+    font-size: 2em;
+}
+
+div > form > input {
+    font-size: 1.5em;
+    width: 82%;
+}
+
+div > form > input.pass{
+    width: 83.5%
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5% 2% 0 0;
+    border-radius: 15%;
+    padding: 1%;
+    min-width: 10%;
+    max-width: 18%;
+}
+
+input[type="submit"]{
+    margin-left: 31%;
+}
+
+form > p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*
+.google-login{
+    display: flex;
+    background-image: var(--googlelogo);
+    background-repeat: no-repeat;
+    
+}*/
+
+.borderform{
+    background-color: var(--formborder);
+    height: 100vh;
+    flex: 1;
+}
+
+#form{
+    background-color: white;
+    padding: 5% 5% 5% 5%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    flex: 1;
+}
+
+.divbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    margin-left: 28%;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    padding: none;
+    margin: 0;
+    margin-left: -20%;
+    background: none;
+    border: none;
+    width: 30%;
+    height: auto;
+}
+
+.button-icons{
+    width: 30%;
+    height: auto;
+    margin-left: none;
+    padding: none;
+    margin: none;
+    background: none;
+    border: none;
+    display: block;
+}
+
+#forgotaccount{
+    display: inline;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+    line-height: 2em;
+}
+
+/* Daqui para baixo faz parte da tela de DefinicaodePerfil.html */
+
+select{
+    width: 50%;
+    height: 10%;
+    font-size: 1.5em;
+}
+
+input#username{
+    width: 60%;
+}
