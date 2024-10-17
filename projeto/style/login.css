@@ -42,11 +42,11 @@ div > form > label{
 
 div > form > input {
     font-size: 1.5em;
-    width: 82%;
+    width: 80%;
 }
 
 div > form > input.pass{
-    width: 83.5%
+    width: 81.5%
 }
 
 input[type="submit"], input[type="reset"]{
@@ -55,7 +55,7 @@ input[type="submit"], input[type="reset"]{
     font-size: 1.5em;
     font-weight: bold;
     margin: 5% 2% 0 0;
-    border-radius: 15%;
+    border-radius: 15px;
     padding: 1%;
     min-width: 10%;
     max-width: 18%;
