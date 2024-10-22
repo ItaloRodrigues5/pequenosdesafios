@@ -1,0 +1,41 @@
+body{
+
+    background-color: #a145c1;
+
+}
+
+.relogio {
+
+    max-width: 50px;
+    margin-top: auto;
+}
+
+.conteiner { 
+
+    
+    align-items: center;
+    display: flex;
+    gap: 380px;
+}
+
+.texto {
+    
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    color: white;
+
+}
+
+
+.conteiner img {
+
+    width: 450px;
+    
+}
+
+.img {
+
+    margin-top: auto;
+    max-width: 200px;
+}
