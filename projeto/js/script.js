@@ -6,10 +6,16 @@ document.getElementById('submitBtn').addEventListener('click', function(){
         alert('Preencha os campos vazios.');
         return;
     }
+    else{
+        document.getElementById('userform').submit();
+    }
 
-    if(!email.includes('@')){
+    if(!email.includes('@') || !email.includes('.')){
         alert('Por favor, preencha no formato de um e-mail incluindo "@" e "."');
         return;
+    }
+    else{
+        document.getElementById('userform').submit();
     }
 
     //Imprimindo a mensagem de sucesso do login
@@ -21,4 +27,4 @@ document.getElementById('submitBtn').addEventListener('click', function(){
     document.getElementById('email').value = '';
     document.getElementById('senha').value = '';
 
-})
+});
