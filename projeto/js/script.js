@@ -22,33 +22,3 @@ document.getElementById('submitBtn').addEventListener('click', function(){
     document.getElementById('senha').value = '';
 
 })
-
-document.addEventListener('DOMContentLoaded', function(){
-    const form = document.getElementById('form');
-    const campos = document.querySelectorAll('input[required]');
-    const button = documment.getElementById('subtmitBtn');
-
-    function verificaFormularioPreenchido(){
-        let formlarioPreenchido = false;
-
-        campos.forEach((campo) => {
-            if(!campo.value.trim()){
-                formularioPreenchido = false;
-            }
-        });
-
-        button.disable = !formularioPreenchido;
-    }
-
-        campos.forEach((campo) => {
-            campo.addEventListener('input', verificaFormularioPreenchido);
-        });
-
-    function enviarFormulario(){
-        if(!button.disable){
-            form.submit();
-        }
-    }
-
-    verificaFormularioPreenchido();
-})
