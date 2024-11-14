@@ -1,0 +1,56 @@
+div.circles{
+    background-color: var(--circlesbackground);
+    border-radius: 50%;
+    position: absolute;
+}
+
+div#circle1{
+    width: 120px;
+    height: 120px;
+    left: 83%;
+    top: 8%;
+    z-index: -1;
+}
+
+div#circle2{
+    width: 80px;
+    height: 80px;
+    left: 90%;
+    top: 25%;
+    z-index: -1;
+}
+
+div#circleleft{
+    width: 1000px;
+    height: 1000px;
+    top: -5%;
+    left: -30%;
+    z-index: -1;
+}
+
+div#circlediv{
+    bottom: -20%;
+    right: -5%;
+    width: 300px;
+    height: 300px;
+}
+
+img#logonivel{
+    width: 250px;
+    display: block;
+    position: absolute;
+    right: 30%;
+    bottom: 50%;
+}
+
+header{
+    align-items: right;
+    justify-content: right;
+    display: flex;
+}
+
+.ionicons{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
