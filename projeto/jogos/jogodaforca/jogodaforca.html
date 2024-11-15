@@ -23,7 +23,11 @@
     <h2>Letras usadas</h2>
     <div id="LetrasChutas"></div>
     <div id="mensagem">Você acertou!</div>
-    <button id="BotaoReiniar" style="display:none;" onclick="InicarJogo()">Reiniciar</button>
+    <h2>Pontuação: <span id="Pontuacao">0</span></h2> <!-- Exibição da pontuação -->
+    
+    <!-- Botões de reiniciar e continuar -->
+    <button id="BotaoReiniciar" style="display:none;" onclick="InicarJogo()">Recomeçar</button>
+    <button id="BotaoContinuar" style="display:none;" onclick="ContinuarJogo()">Continuar</button>
 
     <script>
 
@@ -33,8 +37,8 @@
             "castelo", "feliz", "chave", "coberto", "ovo", 
             "dentes", "detonar", "elefante", "queijo", "arroz", 
             "furado", "folha", "formiga", "galinha", "pedra", 
-            "roupa", "mulher", "jaqueta", "camisa", "limpo", 
-            "lixeira", "massa", "porta", "morango", "palavra", 
+            "roupa", "mulher", "lua", "camisa", "limpo", 
+            "lixeira", "sol", "porta", "morango", "palavra", 
             "pedreiro", "peneira", "pipoca", "planta", 
             "cama", "bota", "perna", "salgado", "jogos",
             "tomate", "idoso", "uniforme", "vassoura"
@@ -45,6 +49,7 @@
         let LetrasChutadas;
         let TentativasRestantes;
         let NumeroErros;
+        let Pontuacao = 0; // Variável para armazenar a pontuação
 
         // Função de início de jogo
         function InicarJogo(){
@@ -64,6 +69,18 @@
             // Iniciar o número de erros
             NumeroErros = 0;
 
+            // Zerar pontuação
+            Pontuacao = 0;
+            document.getElementById("Pontuacao").innerText = Pontuacao; // Atualiza a exibição da pontuação
+
+            // Habilitar o campo de entrada
+            document.getElementById('ChuteUmaLetra').disabled = false;
+
+            // Esconder mensagem e botões
+            document.getElementById('mensagem').innerText = '';
+            document.getElementById('BotaoReiniciar').style.display = 'none';
+            document.getElementById('BotaoContinuar').style.display = 'none';
+
             AtualizarPalavra();
         }
 
@@ -75,9 +92,28 @@
             // Verificação de término de jogo
             if (TentativasRestantes === 0) {
                 EncerrarJogo('Você Morreu! A palavra era: ' + PalavraEscolhida);
+                document.getElementById('BotaoReiniciar').style.display = 'block'; // Mostrar botão apenas se perdeu
             } else if (!ExibicaoPalavra.includes('_')) {
+                CalcularPontos(); // Chama a função para calcular pontos
                 EncerrarJogo('Parabéns! Você acertou a palavra!');
+                document.getElementById('BotaoContinuar').style.display = 'block'; // Mostrar botão se ganhou
+                document.getElementById('ChuteUmaLetra').disabled = true; // Desabilitar entrada após ganhar
+                document.getElementById('BotaoReiniciar').style.display = 'none'; // Esconder botão reiniciar se ganhou
             }
+        }
+
+        function CalcularPontos() {
+            const tamanhoPalavra = PalavraEscolhida.length;
+
+            if (tamanhoPalavra >= 2 && tamanhoPalavra <= 4) {
+                Pontuacao += 15;
+            } else if (tamanhoPalavra >= 5 && tamanhoPalavra <= 6) {
+                Pontuacao += 30;
+            } else if (tamanhoPalavra >= 7 && tamanhoPalavra <= 12) { // Ajuste aqui para aceitar até 12 letras
+                Pontuacao += 75;
+            }
+
+            document.getElementById("Pontuacao").innerText = Pontuacao; // Atualiza a exibição da pontuação
         }
 
         function ChutarALetra(){
@@ -105,13 +141,16 @@
                         ExibicaoPalavra[i] = Letra;
                     }
                 }
+                AtualizarPalavra(); // Atualiza a palavra após acertar uma letra
+                EntradaLetra.value = ''; // Limpa o campo de entrada após chute correto
+                return; // Sai da função após acertar uma letra
             } else {
                 TentativasRestantes--;
                 NumeroErros++;
+                AtualizarPalavra(); // Atualiza a palavra após errar uma letra
+                EntradaLetra.value = ''; // Limpa o campo de entrada após chute errado
+                return; // Sai da função após errar uma letra
             }
-
-            AtualizarPalavra();
-            EntradaLetra.value = '';
         }
 
         function EncerrarJogo(mensagem){  
@@ -120,9 +159,12 @@
 
             // Exibir mensagem
             document.getElementById('mensagem').innerText = mensagem;
+        }
 
-            // Mostrar o botão reiniciar
-            document.getElementById('BotaoReiniar').style.display = 'block';
+        function ContinuarJogo() {
+          InicarJogo(); // Reinicia o jogo mantendo a pontuação atual.
+          document.getElementById("mensagem").innerText = ''; // Limpa mensagem anterior.
+          document.getElementById("BotaoContinuar").style.display = 'none'; // Esconde botão continuar.
         }
 
         window.onload = InicarJogo;
