@@ -1,13 +1,13 @@
 body{
     overflow: hidden;
-}
-
-main{
     background-color: var(--background);
     background-image: url(../../media/encaixedepalavarasframe.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+main{
     display: flex;
     align-items: center;
     justify-content: center;

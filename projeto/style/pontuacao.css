@@ -40,7 +40,9 @@ div{
     text-align: center;
     font-size: 3em;
     font-family: var(--fontecomic);
-    color: var(--presstoplay);
+    color: var(--textgeniocolor);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--background);
 }
 
 span#exclacao{
@@ -81,6 +83,8 @@ div#acertos{
 
 div#acertos > h3{
     color: var(--formborder);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
     font-size: 4em;
     font-family: var(--fontecomic);
     margin: auto;
@@ -91,7 +95,9 @@ div > h2{
     padding: 0 0 0 0;
     text-align: center;
     font-family: var(--fontecomic);
-    color: var(--circlesbackgroundgames);
+    color: var(--circlesbackground);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--textbordercolor);
     margin-top: 0;
     margin-bottom: none;
 }
@@ -102,6 +108,8 @@ h3{
     align-items: center;
     font-family: var(--fontecomic);
     color: var(--formborder);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
     font-size: 5em;
     margin-top: -5%;
 }
