@@ -5,19 +5,51 @@ body{
 }
 
 
-#forca{
+.Relogio img{
 
-    max-width: 900px;
-    margin-left: 500px;
-    
+    display: flex;
+    margin-top: auto;
+    width: 6%;
+}
+
+.conteiner { 
+
+    display: flex;
+    align-items: center;
+    gap: 15%;
 
 }
 
-#exibicao-palavra{
+.texto {    
+    
 
-    font-size: large;
+    display: flex;
+    font-size: 3em;
     color: white;
     
+
 }
 
-#circulos
+
+.conteiner img {
+
+    display: flex;
+    display: block;
+    width: 55%;
+    margin-left: auto;  
+    
+}
+
+
+
+#BotaoReiniar{
+
+    display: none;
+
+
+}
+
+#mensagem{
+
+    display: none;
+}
