@@ -1,41 +1,39 @@
 body{
 
     background-color: #a145c1;
-
+    overflow: hidden;
 }
 
-.relogio {
+.Relogio img{
 
-    max-width: 50px;
+    display: flex;
     margin-top: auto;
+    width: 6%;
 }
 
 .conteiner { 
 
-    
-    align-items: center;
     display: flex;
-    gap: 380px;
+    align-items: self-start;
+    gap: 15%;
+
 }
 
-.texto {
+.texto {    
     
     display: flex;
-    align-items: center;
-    font-size: 4em;
+    width: 500px;
     color: white;
-
+    margin-right: auto;
 }
 
 
 .conteiner img {
 
-    width: 450px;
+    display: flex;
+    display: block;
+    width: 55%;
+    margin-left: auto;  
     
 }
 
-.img {
-
-    margin-top: auto;
-    max-width: 200px;
-}
