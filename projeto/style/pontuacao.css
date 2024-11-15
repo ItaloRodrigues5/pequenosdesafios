@@ -31,18 +31,22 @@ div{
     height: 90%;
     margin: 0;
     padding: 0;
-    margin-top: -25%;
+    margin-top: -30%;
     margin-left: 5%;
 }
 
 #divh1pontuacao{
     display: inline;
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
     font-family: var(--fontecomic);
     color: var(--textgeniocolor);
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--background);
+    -webkit-text-stroke-color: var(--textbordercolor);
+}
+
+h1{
+    margin-top: -5%;
 }
 
 span#exclacao{
