@@ -1,0 +1,46 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#mathbackimage{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -2%;
+    padding: 0;
+    z-index: -1;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 6em;
+    color: white;
+    font-family: var(--fontecomic);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--textbordercolor);
+    cursor: pointer;
+}

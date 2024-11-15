@@ -2,6 +2,7 @@ div.circles{
     background-color: var(--circlesbackground);
     border-radius: 50%;
     position: absolute;
+    z-index: -1;
 }
 
 div#circle1{
