@@ -1,0 +1,38 @@
+body{
+    overflow: hidden;
+}
+
+main{
+    background-color: var(--background);
+    background-image: url(../../media/encaixedepalavarasframe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 6em;
+    color: white;
+    font-family: var(--fontecomic);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+}
+
+a{
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--textbordercolor);
+    cursor: pointer;
+}
