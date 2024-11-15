@@ -96,7 +96,7 @@ div#acertos > h3{
 
 div > h2{
     font-size: 5em;
-    padding: 0 0 0 0;
+    padding: 0;
     text-align: center;
     font-family: var(--fontecomic);
     color: var(--circlesbackground);
