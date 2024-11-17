@@ -10,16 +10,16 @@ div{
     border-radius: 10%;
     display: flex;
     height: auto;
-    margin-left: 5%;
 }
 
 .boximage{
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 2%;
     width: 41%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 2%;
+
 }
 
 .imagelogo{
@@ -32,21 +32,43 @@ div{
 div > h2{
     font-size: 4em;
     padding: 0 0 0 0;
+    margin: 5% 0 5% 0;
     text-align: center;
     margin-top: none;
 }
 
-div > form > label{
+#passcontainter{
+    position: relative;
+    margin: 0;
+    width: auto;
+}
+
+#eyepass{
+    visibility: hidden;
+    cursor: pointer;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#eyes{
+    visibility: visible;
+    width: 20px;
+    height: 20px;
+}
+
+label{
     font-size: 2em;
 }
 
-div > form > input {
+input {
     font-size: 1.5em;
     width: 80%;
+    margin-bottom: 1%;
 }
 
-div > form > input.pass{
-    width: 81.5%
+input.pass{
+    width: 81.5%;
 }
 
 input[type="submit"], input[type="reset"]{
@@ -54,7 +76,7 @@ input[type="submit"], input[type="reset"]{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    margin: 5% 2% 0 0;
+    margin: 0 2% 0 0;
     border-radius: 15px;
     padding: 1%;
     min-width: 10%;
@@ -65,9 +87,16 @@ input[type="submit"]{
     margin-left: 31%;
 }
 
-form > p{
-    font-size: 1.5em;
+p{
+    font-size: 1em;
     text-align: center;
+    margin: 1% auto;
+}
+
+.error-message{
+    display: none;
+    color: red;
+    font-size: 0.9em;
 }
 
 /*
@@ -80,7 +109,7 @@ form > p{
 
 .borderform{
     background-color: var(--formborder);
-    height: 100vh;
+    height: 97vh;
     flex: 1;
 }
 
