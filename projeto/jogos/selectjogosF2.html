@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="../style/style.css" type="text/css">
     <link rel="stylesheet" href="../style/selectjogos.css" type="text/css">
     <link rel="stylesheet" href="../style/circlesbackstyle.css" type="text/css">
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     
 </head>
 <body>
     
+    <audio src="./media/Música infantil sem direitos autorais - Pocoyo.mp3" preload="auto" autoplay id="audioplayer" ></audio>
+    
     <header>
-        <ion-icon name="volume-high" class="ionicons"></ion-icon>
+        <button id="audiobutton">
+            <ion-icon name="volume-high" class="ionicons" id="volumeicon"></ion-icon>
+        </button>
+
         <ion-icon name="contact" class="ionicons"></ion-icon>
     </header>
 
@@ -67,7 +75,12 @@
     
     <footer></footer>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Esse Script comentado abaixo está ultrapassado e fora de uso do Ion.Icon.
+    O correto é os dois do header. Pelo menos relacionado ao Ion Icon é pra ser assim. -->
+
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+
+    <script src="../js/buttonsclick.js"></script>
 
 </body>
 </html>
