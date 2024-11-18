@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style/login.css" type="text/css"/>
     
     <link rel="shortcut icon" href="favicon/pequenosdesadios-logo.ico" type="image/x-icon"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header></header>
@@ -26,13 +29,26 @@
                 <h2>CADASTRE-SE</h2>
 
                 <form action="./DefinicaodePerfil.html" method="get" id="userform">
-                        <label for="email">E-mail:</label>
-                        <input type="text" name="" id="email" value="" required autofocus placeholder="Digite seu e-mail"><br/>
+
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="" id="email" value="" required autofocus placeholder="Digite seu e-mail"><br/>
+                        </div>
+                        <div class="error-message" id="emailError"><p>*Este campo é obrigatório.</p></div>
+                        <div class="error-message" id="arroubapoint"><p>*Preencha o formato de e-mail colocando "@" e ".".</p></div>
         
-                        <label for="senha">Senha:</label>
-                        <input type="password" name="" id="senha" value="" required placeholder="Digite sua senha" class="pass">
+                        
+                        <div id="passcontainter">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="" id="senha" value="" required placeholder="Digite sua senha" class="pass">
+                            <button id="eyepass">
+                                <ion-icon name="eye" id="eyes"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="error-message" id="passError"><p>*Este campo é obrigatório.</p></div>
+                        <div class="error-message" id="passmoreminus"><p>*Senha deve conter entre 8 a 20 caracteres.</p></div>
                     <br/>
-                    <input type="submit" value="Entrar" class="marginleft">
+                    <input type="submit" value="Entrar" class="marginleft" id="submitBtn">
                     <input type="reset" value="Limpar" class="marginleft"><br>
 
                     <p>Ou <br>cadastre-se usando:</p>
@@ -60,5 +76,7 @@
     </main>
 
     <footer></footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

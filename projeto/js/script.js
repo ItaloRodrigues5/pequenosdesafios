@@ -26,7 +26,7 @@ document.getElementById('submitBtn').addEventListener('click', function(event){
         valid = false;
         document.getElementById('passError').style.display = 'block';
     }
-    else if(senha.length < 6 || senha.length > 8){
+    else if(senha.length < 8 || senha.length > 20){
         valid = false;
         document.getElementById('passmoreminus').style.display = 'block';
     }
