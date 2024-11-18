@@ -29,16 +29,16 @@
                 
                 <h2>Definição de Perfil</h2>
 
-                <form action="#" method="get">
+                <form action="#" method="get" id="definicaoform">
                     
                     <label for="username">Nome de usuário:</label>
-                    <input type="text" name="" id="username" value="" required placeholder="@nomedeusuario" class="pass"><br/>
+                    <input type="text" name="" id="username" required placeholder="@nomedeusuario" class="pass"><br/>
 
                     <label for="nome:">Nome:</label>
-                    <input type="text" name="" id="nome" value="" required autofocus placeholder="Nome de Usuário"><br/>
+                    <input type="text" name="" id="nome" required autofocus placeholder="Nome de Usuário"><br/>
 
                     <label for="sexo">Sexo:</label>
-                    <select name="sexo">
+                    <select name="sexo" id="selectsexo">
                         <option value="0">------------------------------------</option>
                         <option value="M">Masculino</option> 
                         <option value="F">Feminino</option> 
@@ -48,8 +48,10 @@
                     <input type="date" name="" id="data">
 
 
-                    <input type="submit" value="Concluir" class="marginleft">
-                    <input type="reset" value="Limpar" class="marginleft">
+                    <div id="principalbuttons">
+                        <input type="submit" value="Concluir" class="marginleft">
+                        <input type="reset" value="Limpar" class="marginleft">
+                    </div>
 
             </div>
         </div>

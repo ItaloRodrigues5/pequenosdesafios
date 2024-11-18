@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+    overflow: hidden;
+}
+
 .container{
     display: flex;
     height: auto;
@@ -15,22 +19,21 @@ div{
 .boximage{
     display: flex;
     margin: 0;
-    padding: 0 2%;
-    width: 41%;
+    padding: 0 0 0 0;
+    width: clamp(60%, 50%, 80%);
     height: auto;
-    margin-top: 2%;
 
 }
 
 .imagelogo{
-    width: 160%;
-    height: 90%;
+    width: clamp(80%, 50%, 100%);;
+    height: auto;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10%;
 }
 
 div > h2{
-    font-size: 4em;
+    font-size: clamp(2em, 4vw, 5em);
     padding: 0 0 0 0;
     margin: 5% 0 5% 0;
     text-align: center;
@@ -58,17 +61,28 @@ div > h2{
 }
 
 label{
-    font-size: 2em;
+    font-size: clamp(1em, 2vw, 3em);
 }
 
 input {
     font-size: 1.5em;
-    width: 80%;
+    width: clamp(50%, 50vw, 80%);
     margin-bottom: 1%;
+    border-radius: 15px;
 }
 
 input.pass{
-    width: 81.5%;
+    width: clamp(51.5%, 100vw, 81.5%);
+}
+
+#principalbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 20% 5% 20%;
+    grid-template-columns: repeat(2, auto);
+
 }
 
 input[type="submit"], input[type="reset"]{
@@ -76,15 +90,11 @@ input[type="submit"], input[type="reset"]{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0 2% 0 0;
+    padding: 2%;
+    margin: 0 0 0 5%;
     border-radius: 15px;
     padding: 1%;
-    min-width: 10%;
-    max-width: 18%;
-}
-
-input[type="submit"]{
-    margin-left: 31%;
+    width: clamp(10%,  30%);
 }
 
 p{
@@ -109,8 +119,12 @@ p{
 
 .borderform{
     background-color: var(--formborder);
-    height: 97vh;
-    flex: 1;
+    height: clamp(70vh, 50vw, 97vh);
+    width: clamp(30%, 50vw 90%);
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    
 }
 
 #form{
@@ -119,9 +133,9 @@ p{
     margin: 5%;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    position: flex;
+    width: clamp(50%, 80%);
     height: auto;
-    flex: 1;
 }
 
 .divbutton{
@@ -161,7 +175,8 @@ p{
     height: auto;
     justify-content: left;
     align-items: center;
-    line-height: 2em;
+    line-height: 1.5em;
+    font-size: clamp(1em, 5vw 2em);
 }
 
 /* Daqui para baixo faz parte da tela de DefinicaodePerfil.html */
@@ -172,6 +187,6 @@ select{
     font-size: 1.5em;
 }
 
-input#username{
+/* input#username{
     width: 60%;
-}
+} */
