@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     button.addEventListener('click', () => {
         if(icon.getAttribute('name') == 'volume-high'){
-            icon.setAttribute('name', 'volume-mute');
+            icon.setAttribute('name', 'volume-off');
             audioPlayer.pause();
             console.log('ícone mudado para ficar sem som');
         }
