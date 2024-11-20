@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação - Pequenos Desafios</title>
+    <link rel="stylesheet" href="stylepontuacao/style.css" type="text/css"/>
+    <link rel="stylesheet" href="stylepontuacao/pontuacao.css" type="text/css"/>
+    <link rel="shortcut icon" href="../favicon/pequenosdesadios-logo.ico" type="image/x-icon"/>
+</head>
+<body>
+<header></header>
+<main class="container">
+    <div id="circle1" class="circles"></div>
+    <div id="circle2" class="circles"></div>
+    
+    <div class="boximage">
+        <div id="divh1pontuacao">
+            <h1>GÊNIO<span id="exclacao">!</span></h1>
+        </div>
+        <img src="stylepontuacao/brain.png" alt="Cérebro de Pontuação GÊNIO" class="imagelogo">
+    </div>
+
+    <div class="borderform">
+        <div id="form">
+            <h2>VOCÊ TEVE:</h2>
+            <div id="acertos">
+                <h3></h3> <!-- Aqui será exibido o número de acertos -->
+            </div>
+            <h2>PONTOS</h2>
+            <div id="pontos">
+                <h3></h3> <!-- Aqui será exibida a pontuação -->
+            </div>
+        </div>
+    </div>
+
+    <div id="circlediv" class="circles"></div>
+</main>
+
+<footer></footer>
+
+<!-- Script para recuperar e exibir a pontuação e os acertos -->
+<script>
+const pontuacao = localStorage.getItem('pontuacaoTotal'); // Recupera a pontuação total
+const acertos = localStorage.getItem('acertosConsecutivos'); // Recupera os acertos
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pontosElement = document.querySelector('#pontos h3'); // Seleciona o elemento onde os pontos serão exibidos
+    const acertosElement = document.querySelector('#acertos h3'); // Seleciona o elemento onde os acertos serão exibidos
+    
+    if (pontosElement) {
+        pontosElement.innerText = pontuacao ? pontuacao : '0'; // Exibe a pontuação ou 0 se não houver
+    }
+
+    if (acertosElement) {
+        acertosElement.innerText = acertos ? `${acertos} Acertos` : '0 Acertos'; // Exibe os acertos ou 0 se não houver
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+html, body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+div{
+    border-radius: 20px;
+    display: flex;
+    height: auto;
+    margin-left: 5%;
+}
+
+.boximage{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 41%;
+    height: auto;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.imagelogo{
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    margin-top: -30%;
+    margin-left: 5%;
+}
+
+#divh1pontuacao{
+    display: inline;
+    text-align: center;
+    font-size: 5em;
+    font-family: var(--fontecomic);
+    color: var(--textgeniocolor);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+}
+
+h1{
+    margin-top: -5%;
+}
+
+span#exclacao{
+    color: var(--formborder);
+}
+
+.borderform{
+    background-color: var(--formborder);
+    display: flex;
+    max-height: 98vh;
+    min-height: auto;
+    flex: 1;
+    margin: 0% 1% 1% 1%;
+}
+
+#form{
+    background-color: white;
+    padding: 5% 5% 5% 5%;
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    flex: 1;
+}
+
+div#acertos{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: -8% auto 1% auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div#acertos > h3{
+    display: flex;
+    color: var(--formborder);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+    font-size: 4em;
+    font-family: var(--fontecomic);
+    margin: auto;
+}
+
+div > h2{
+    font-size: 5em;
+    padding: 0;
+    text-align: center;
+    font-family: var(--fontecomic);
+    color: var(--circlesbackground);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+    margin-top: 5%;
+    margin-bottom: none;
+}
+
+h3{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontecomic);
+    color: var(--formborder);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+    font-size: 5em;
+    margin-top: -5%;
+}
+
+#pontos{
+    display: flex;
+    margin: auto;
+    margin-top: -10%;
+
+
+}
+
+div.circles{
+    background-color: var(--circlesbackground);
+    border-radius: 50%;
+    position: absolute;
+}
+
+div#circle1{
+    width: 500px;
+    height: 500px;
+    left: -20%;
+    top: -30%;
+    z-index: -1;
+}
+
+div#circle2{
+    width: 300px;
+    height: 300px;
+    left: -15%;
+    bottom: -20%;
+    z-index: -1;
+}
+
+div#circlediv{
+    bottom: -50%;
+    right: -20%;
+    width: 1000px;
+    height: 1000px;
+    z-index: -1;
+}
