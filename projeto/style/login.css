@@ -8,6 +8,14 @@ body{
     display: flex;
     height: auto;
     align-items: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
 }
 
 div{
@@ -18,8 +26,8 @@ div{
 
 .boximage{
     display: flex;
-    margin: auto;
-    padding: 0 0 0 0;
+    margin: 0 5% 1px 5%;
+    padding: 0;
     width: 41%;
     height: auto;
 
@@ -33,11 +41,19 @@ div{
 }
 
 div > h2{
-    font-size: clamp(2em, 4vw, 5em);
+    font-size: clamp(3em, 5vw, 5em);
     padding: 0 0 0 0;
-    margin: 5% 0 5% 0;
+    margin: auto 0 auto 0;
     text-align: center;
     margin-top: none;
+}
+
+div > h2#cadastro{
+    font-size: clamp(2em, 5vw, 5em);
+}
+
+div > h2#Alteracoesconcluidas{
+    font-size: clamp(2em, 4vw, 5em);
 }
 
 #passcontainter{
@@ -66,7 +82,7 @@ label{
 
 input {
     font-size: 1.5em;
-    width: clamp(50%, 50vw, 80%);
+    width: clamp(50%, 60vw, 80%);
     margin-bottom: 1%;
     border-radius: 15px;
 }
@@ -75,11 +91,19 @@ input.pass{
     width: clamp(51.5%, 100vw, 81.5%);
 }
 
+input#username{
+    width: clamp(60%, 50vw, 50%);
+}
+
+input#nome{
+    width: clamp(60%, 50vw, 82%);
+}
+
 #principalbuttons{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 5%;
     margin: 0 20% 5% 20%;
     grid-template-columns: repeat(2, auto);
 
@@ -94,7 +118,7 @@ input[type="submit"], input[type="reset"]{
     margin: 0 0 0 5%;
     border-radius: 15px;
     padding: 1%;
-    width: clamp(10%,  30%);
+    width: clamp(80%, 100vw, 100%);
 }
 
 p{
@@ -120,7 +144,7 @@ p{
 .borderform{
     background-color: var(--formborder);
     height: clamp(70vh, 50vw, 97vh);
-    width: clamp(30%, 45vw, 90%);
+    width: clamp(30%, 50vw, 90%);
     display: flex;
     position: relative;
     
@@ -128,12 +152,12 @@ p{
 
 #form{
     background-color: white;
-    padding: 5% 5% 5% 5%;
+    padding: 5%;
     margin: 5%;
     display: flex;
     flex-direction: column;
-    position: flex;
-    width: clamp(30%, 45vw, 90%);
+    position: relative;
+    width: clamp(30%, 50vw, 90%);
     height: auto;
 }
 
@@ -189,3 +213,8 @@ select{
 /* input#username{
     width: 60%;
 } */
+
+#imgalteracoes{
+    width: 41%;
+    margin: auto;
+}
