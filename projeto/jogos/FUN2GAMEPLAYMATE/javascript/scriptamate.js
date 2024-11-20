@@ -5,7 +5,11 @@ let RespostaCerta;
 const TEMPO_TOTAL = 30; // Tempo total para cada pergunta
 
 document.getElementById('startButton').addEventListener('click', IniciarJogo);
-document.getElementById('EnviarAReposta').addEventListener('click', CheckarResposta);
+document.getElementById('RespostaPergnta').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        CheckarResposta(); // Chama a função quando "Enter" é pressionado
+    }
+});
 
 function IniciarJogo() {
     score = 0; // Reinicia a pontuação
@@ -111,5 +115,5 @@ function calcularScore(Resultado) {
     if (Resultado >= 11 && Resultado <= 20) return 30;
     if (Resultado >= 21 && Resultado <= 40) return 35;
     if (Resultado >= 41 && Resultado <= 50) return 100;
-    if (Resultado >= 51 && Resultado <= 10000) return 150;
+    if (Resultado >= 51 && Resultado <= 1000) return 150;
 }
