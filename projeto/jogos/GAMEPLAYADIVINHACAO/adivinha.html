@@ -6,16 +6,20 @@
     <title>Jogo de Adivinhação</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        #question { margin: 20px 0; }
-        #result { margin-top: 20px; }
+        #pergunta { margin: 20px 0; }
+        #resultado { margin-top: 20px; }
+        #tempo { font-size: 20px; color: red; } /* Estilo para o tempo */
+        #pontuacao { font-size: 20px; color: green; } /* Estilo para a pontuação */
     </style>
 </head>
 <body>
     <h1>Jogo de Adivinhação</h1>
-    <div id="question"></div>
-    <input type="text" id="answer" placeholder="Digite sua resposta aqui" />
-    <button id="submit">Responder</button>
-    <div id="result"></div>
+    <div id="pontuacao">Pontuação: 0</div> <!-- Novo elemento para mostrar a pontuação -->
+    <div id="pergunta"></div>
+    <input type="text" id="resposta" placeholder="Digite sua resposta aqui" />
+    <button id="enviar">Responder</button>
+    <div id="tempo">Tempo restante: 40 segundos</div> <!-- Elemento para mostrar o tempo -->
+    <div id="resultado"></div>
 
     <script src="script/adivinha.js"></script>
 </body>
