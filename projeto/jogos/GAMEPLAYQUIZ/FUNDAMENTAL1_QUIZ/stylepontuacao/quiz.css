@@ -35,7 +35,6 @@ h2 {
     width: 500px;
     color: black;
     font-size: 2em;
-    white-space: nowrap;
 }
 .option:hover {
     background-color: #d4d4d4;
