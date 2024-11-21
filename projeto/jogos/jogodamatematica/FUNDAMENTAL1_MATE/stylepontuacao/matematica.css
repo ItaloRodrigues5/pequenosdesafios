@@ -1,4 +1,8 @@
 body{
+    background-image: url(../../../media/backgroundjogomatematica.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: var(--fontecomic);
     display: block;
     position: relative;
@@ -18,7 +22,9 @@ body{
 }
 
 #Resultado{
-    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
 }
 
 #startButton{
@@ -43,9 +49,10 @@ body{
     border-radius: 5px;
     border-color: white;
     cursor: pointer;
-    width: 200px;
+    width: 300px;
     color: black;
     font-size: 2em;
+    white-space: nowrap;
 }
 
 input{
@@ -57,12 +64,15 @@ input{
 
 h1{
     font-size: 5em;
+    margin-top: 5%;
     margin-bottom: 0;
+    color: white;
 }
 
 h2{
     margin-top: none;
-    font-size: 4em;
+    padding: none;
+    font-size: 5em;
     color: #5dc0eb;
     -webkit-text-stroke-color: #e16868;
     -webkit-text-stroke-width: 2px;
