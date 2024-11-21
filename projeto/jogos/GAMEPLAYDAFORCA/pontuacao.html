@@ -55,6 +55,11 @@
                   document.getElementById('pontuacao').innerHTML = pontos; // Atualiza a exibição da pontuação
                   localStorage.removeItem('pontuacao'); // Remove a pontuação do localStorage após usar
               }
+
+              // Redireciona para a próxima página após 10 segundos
+            setTimeout(function() {
+                window.location.href = '../../nivel.html'; // Substitua 'proxima_pagina.html' pelo URL desejado
+            }, 10000); // 10000 milissegundos = 10 segundos
           };
       </script>
 

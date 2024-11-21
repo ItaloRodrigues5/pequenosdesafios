@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (acertosElement) {
         acertosElement.innerText = acertos ? `${acertos} Acertos` : '0 Acertos'; // Exibe os acertos ou 0 se não houver
     }
+
+    // Redireciona para a próxima página após 10 segundos
+    setTimeout(function() {
+        window.location.href = '../../nivel.html'; // Substitua 'proxima_pagina.html' pelo URL desejado
+    }, 10000); // 10000 milissegundos = 10 segundos
 });
 </script>
 
