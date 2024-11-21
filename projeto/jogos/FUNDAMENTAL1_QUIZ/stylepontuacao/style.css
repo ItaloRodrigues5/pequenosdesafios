@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #A145C2;
+    --backgroundgames: #4B2957;
+    --formborder: #FFDA46;
+    
+    --circlesbackground: #C4527F;
+    --circlesbackgroundgames: #9931AE;
+    
+    --textgeniocolor: #1dcd49;
+    --textbordercolor: #045378;
+    
+    --presstoplay: #5DC0EB;
+    --textplay: #529088;
+
+
+    --fontepadrao: Arial, verdana, Helvetica, sans-serif;
+    --fontecomic: "Comic Neue", cursive;
+}
+
+body{
+    background-color: var(--background);
+    height: auto;
+}
+
+main{
+    height: 100vh;
+    margin: 0;
+    display: block;
+}

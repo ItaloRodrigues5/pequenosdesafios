@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pontuação - Pequenos Desafios</title>
+
+    <link rel="stylesheet" href="stylepontuacao/style.css" type="text/css"/>
+    <link rel="stylesheet" href="stylepontuacao/pontuacao.css" type="text/css"/>
+    
+    <link rel="shortcut icon" href="../favicon/pequenosdesadios-logo.ico" type="image/x-icon"/>
+</head>
+<body>
+    <header></header>
+
+    <main class="container">
+
+        <div id="circle1" class="circles"></div>
+        <div id="circle2" class="circles"></div>
+        
+        <div class="boximage">
+            <div id="divh1pontuacao">
+                <h1>GÊNIO<span id="exclacao">!</span></h1>
+            </div>
+            <img src="stylepontuacao/brain.png" alt="Cérebro de Pontuação GÊNIO" class="imagelogo">
+        </div>
+
+        <div class="borderform">
+            <div id="form">
+                <h2>VOCÊ TEVE:</h2>
+                <div id="acertos">
+                    <h3 id="acertosCount">0</h3> <!-- Elemento que mostrará a quantidade de acertos -->
+                </div>
+                <h2>PONTOS</h2>
+                <h2>PONTUAÇÃO:</h2>
+                <h3 id="pontosCount">0</h3> <!-- Elemento que mostrará a pontuação total -->
+            </div>
+        </div>
+
+        <div id="circlediv" class="circles"></div>
+        
+    </main>
+
+    <footer></footer>
+
+    <script>
+       // Função para obter os parâmetros da URL e exibir os dados
+       const params = new URLSearchParams(window.location.search);
+       const pontos = params.get('pontos') || 0; // Obtém os pontos ou 0 se não houver
+
+       document.getElementById('pontosCount').innerText = pontos; // Atualiza a pontuação exibida
+       document.getElementById('acertosCount').innerText = '0'; // Você pode adicionar lógica para contar acertos se desejar.
+   </script>
+</body>
+</html>
