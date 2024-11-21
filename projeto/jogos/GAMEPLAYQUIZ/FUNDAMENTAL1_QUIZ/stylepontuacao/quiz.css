@@ -1,0 +1,107 @@
+body {
+    font-family: var(--fontecomic);
+    background-color: var(--backgroundgames);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#questionborder{
+    background-color: var(--formborder);
+    padding: 1%;
+    margin: 0 15% 0 15%;
+
+}
+
+.question-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5%;
+}
+h2 {
+    margin: 0;
+    font-size: 3em;
+}
+.option {
+    display: block;
+    margin: 10px auto; /* Margem automática para centralizar */
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    width: 200px;
+    color: black;
+    font-size: 2em;
+}
+.option:hover {
+    background-color: #d4d4d4;
+}
+
+#score{
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+div.circles{
+    background-color: var(--circlesbackground);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+div#circle1{
+    width: 120px;
+    height: 120px;
+    left: 90%;
+    top: 8%;
+    z-index: -1;
+    background-color: #4af47a;
+}
+
+div#circle2{
+    width: 80px;
+    height: 80px;
+    left: 96%;
+    top: 15%;
+    z-index: -1;
+    background-color: #4af47a;
+}
+
+div#circle3{
+    width: 120px;
+    height: 120px;
+    left: 10%;
+    bottom: 10%;
+    z-index: -1;
+    background-color: #7b93e8;
+}
+
+div#circle4{
+    width: 80px;
+    height: 80px;
+    left: 7%;
+    bottom: 7%;
+    z-index: -1;
+    background-color: #7b93e8;
+}
+
+div#circleleft{
+    width: 800px;
+    height: 800px;
+    top: -50%;
+    left: -20%;
+    z-index: -1;
+    background-color: #d1851f;
+}
+
+div#circlediv{
+    bottom: -30%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background-color: #fadb5e;
+}
