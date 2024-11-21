@@ -83,6 +83,12 @@ div#acertos{
     margin: -8% auto 1% auto;
     justify-content: center;
     align-items: center;
+    
+    color: var(--formborder);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--textbordercolor);
+    font-family: var(--fontecomic);
+    margin: auto;
 }
 
 div#acertos > h3{
