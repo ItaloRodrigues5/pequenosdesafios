@@ -1,6 +1,9 @@
 body{
     background-color: #a145c1;
     overflow: hidden;
+    font-family: var(--fontecomic);
+    color: white;
+    font-size: 1em;
 }
 
 .Relogio img{
