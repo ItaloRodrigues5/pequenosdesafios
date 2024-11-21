@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Adivinhação</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #pergunta { margin: 20px 0; }
-        #resultado { margin-top: 20px; }
-        #tempo { font-size: 20px; color: red; } /* Estilo para o tempo */
-        #pontuacao { font-size: 20px; color: green; } /* Estilo para a pontuação */
-    </style>
+    <title>Jogo de Adivinhação - Pequenos Desafios</title>
+
+    <link rel="stylesheet" href="./style/adivinha.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="shortcut icon" href="../../favicon/pequenosdesadios-logo.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Jogo de Adivinhação</h1>
-    <div id="pontuacao">Pontuação: 0</div> <!-- Novo elemento para mostrar a pontuação -->
-    <div id="pergunta"></div>
-    <input type="text" id="resposta" placeholder="Digite sua resposta aqui" />
-    <button id="enviar">Responder</button>
-    <div id="tempo">Tempo restante: 40 segundos</div> <!-- Elemento para mostrar o tempo -->
-    <div id="resultado"></div>
+
+    <div id="circle1" class="circles"></div>
+    <div id="circle2" class="circles"></div>
+
+    <div id="circle3" class="circles"></div>
+    <div id="circle4" class="circles"></div>
+
+    <div id="circleleft" class="circles"></div>
+
+    <div id="circlediv" class="circles"></div>
+
+    <div id="gameadivinha">
+        <h1>Jogo de Adivinhação</h1>
+        <div id="pontuacao">Pontuação: 0</div> <!-- Novo elemento para mostrar a pontuação -->
+        <div id="pergunta"></div>
+        <input type="text" id="resposta" placeholder="Digite sua resposta aqui" />
+        <button id="enviar">Responder</button>
+        <div id="tempo">Tempo restante: 40 segundos</div> <!-- Elemento para mostrar o tempo -->
+        <div id="resultado"></div>
+    </div>
 
     <script src="script/adivinha.js"></script>
 </body>
