@@ -2,6 +2,7 @@ body {
     font-family: var(--fontecomic);
     font-weight: bold;
     overflow: hidden;
+    color: white;
 }
 
 input{
@@ -20,8 +21,24 @@ button{
 }
 
 #pergunta{
-    margin: 20px 0;
+    margin: 2%;
     font-size: 3em;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5%;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 0;
+    margin: 1%;
+}
+
+#questionborder{
+    background-color: var(--formborder);
+    padding: 1%;
+    margin: 0 15% 0 15%;
+    z-index: -1;
+    border-radius: 15px;
 }
 
 #resultado{
@@ -39,7 +56,7 @@ button{
 }
 
 #pontuacao{
-    margin: 0 auto;
+    margin: 2% auto;
     width: 20%;
     background-color: white;
     color: green;
@@ -58,7 +75,6 @@ button{
 
 h1{
     font-size: 5em;
-    color: black;
     text-align: center;
 }
 
