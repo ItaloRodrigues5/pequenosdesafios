@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="css/forca.css">
+    <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body>
     
+    <div id="circleleft" class="circles"></div>
+
     <div class="Relogio">
         <img src="forcaimagenscerta/Texto_do_seu_parágrafo__2_-removebg-preview.png" alt="Relógio">
     </div>
+
     <div class="conteiner">
         <div class="texto" id="PalavraExibicao"></div>
         <div class="imagens">
             <img id="ImagensDaForCa" src="forcaimagens/img/forca0.png" alt="Jogo da Forca">
         </div>
     </div>
-    <input type="text" id="ChuteUmaLetra" placeholder="Chute Uma Letra" maxlength="1">
-    <button id="Chutar" onclick="ChutarALetra()">Chutar</button>
+    <div id="inputforca">
 
-    <h2>Letras usadas</h2>
-    <div id="LetrasChutas"></div>
-    <div id="mensagem">Você acertou!</div>
-    <h2>Pontuação: <span id="Pontuacao">0</span></h2> <!-- Exibição da pontuação -->
+        <div id="input">
+            <input type="text" id="ChuteUmaLetra" placeholder="Chute Uma Letra" maxlength="1" autofocus>
+            <button id="Chutar" onclick="ChutarALetra()">Chutar</button>
+        </div>
+
+        <h2>Letras usadas</h2>
+        <div id="LetrasChutas"></div>
+        <div id="mensagem">Você acertou!</div>
+        <h2>Pontuação: <span id="Pontuacao">0</span></h2> <!-- Exibição da pontuação -->
+    </div>
     
     <!-- Botões de reiniciar e continuar -->
-    <button id="BotaoReiniciar" style="display:none;" onclick="InicarJogo()">Recomeçar</button>
-    <button id="BotaoContinuar" style="display:none;" onclick="ContinuarJogo()">Continuar</button>
+    <div id="botoesfinais">
+        <button id="BotaoReiniciar" style="display:none;" onclick="InicarJogo()">Recomeçar</button>
+        <button id="BotaoContinuar" style="display:none;" onclick="ContinuarJogo()">Continuar</button>
+    </div>
 
     <script>
 
