@@ -56,7 +56,6 @@ function flipCard(){
     this.classList.add("flipped");
     console.log(this.dataset.image);
     this.style.backgroundImage = `url(${this.dataset.image})`;
-    this.style
 
     if(!firstcard){
         firstcard = this;
