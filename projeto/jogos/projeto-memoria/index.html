@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="shortcut icon" href="media/favicon/pequenosdesadios-logo.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body class="font-family">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand fs-2 fw-bold text-white text-wrap">Jogo da Memória - Pequenos Desafios</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#"  class="nav-link text-white fs-5 fw-bold">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white fs-5 fw-bold">Sobre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white fs-5 fw-bold">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h1 class="text-center fw-bold">Jogo da Memória</h1>
+        
+        <p class="fw-bold text-center fs-5">Pontuação: <span id="score">0</span></p>
+        <p class="fw-bold text-center fs-5">Tempo: <span id="timer">0</span> segundos</p>
+        
+        <div class="game-container" id="memorygame"></div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <button id="resetBtn" class="btn btn-warning text-white">Reiniciar</button>
+        </div>
+    </main>
+    
+    <footer class="text-center mt-5">
+        <p class="bg-dark text-white p-3 fs-5 fw-bold">&copy; Todos os direitos são reservados aos desenvolvedores do site.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 display=swap');
+
+:root{
+    --background-nav: #A145C2;
+    --background: #5DC0EB;
+
+    --fontecomic: "Comic Neue", cursive;
+}
+
+.navbar{
+    background-color: var(--background-nav);
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.font-family{
+    font-family: var(--fontecomic);
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--background);
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    height: 500px;
+}
+
+.card{
+    background-color: #6c757d;
+    background-image: url("../media/memoria/back-control.png");
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: relative;
+    cursor: pointer;
+    border: 1px solid black;
+    transform: rotateY(0deg);
+    transition: transform 0.5s, background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.flipped{
+    color: black;
+    border: 5px solid black;
+    transform: rotateY(180deg);
+}
